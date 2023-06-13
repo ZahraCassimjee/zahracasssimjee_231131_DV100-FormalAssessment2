@@ -21,7 +21,7 @@
   <body>
 
     <div class="row">
-      <form class="col-6 form">
+      <form class="col-6 form" id="smoothieForm">
         <h3>The Smoothie Shack</h3>
         <input type="text" class="form-control" placeholder="Name your Smoothie" id="smoothie" >
         
@@ -108,24 +108,24 @@
 
         
         
-        <button class="btn btn-primary" type="button">Make My Smoothie</button>
+        <button class="btn btn-primary" type="button" onclick="makeSmoothie(); displaySmoothieOrders()">Make My Smoothie</button>
       </form>
       
       <div class="col-6 output">
-        <h3>Smoothie Order List</h3>
-        <div class="row" id="studentOut">
+        <div class="outHeader">
+          <h3>Smoothie Order List</h3>
+        </div>
+        <div id="orders">
+  
+    
+  
+      </div>
+      <div class=" output">
+        <h3></h3>
+        <div class="row" id="displaySmoothieOrders">
 
           <!-- This is the example element -->
-          <div class="col-6">
-            <div class="card" style="width: 100%;">
-              <div class="card-body">
-                <h5 class="card-title">Smoothie Name</h5>
-                <p>Size: value</p>
-                <p>Ingredients: value</p>
-                <p>Total Cost: value</p>
-              </div>
-            </div>
-          </div>
+          
     
         </div> 
       </div>
@@ -135,4 +135,3 @@
     
   </body>
 </html>
-
